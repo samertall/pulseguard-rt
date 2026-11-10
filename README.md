@@ -1,6 +1,12 @@
 # PulseGuard RT
 
+![PulseGuard RT dashboard preview showing dispatch latency, screening metrics, and a QNX trace histogram](docs/images/dashboard-preview.png)
+
+*Illustrative dashboard preview based on the bundled **synthetic QNX-format trace**. This is not a measured QNX device capture.*
+
 **See what the scheduler is telling you.** An offline, zero-dependency performance intelligence tool for **QNX SDP 8.0** developers, written by Samer Tallauze for the QNX Global Hackathon (November–December 2026).
+
+**[Run the 60-second demo](#start-in-under-one-minute--no-qnx-sdk-needed-for-demo)** · **[Explore the capabilities](#capabilities)** · **[Follow the QNX codelab](docs/CODELAB.md)** · **[Watch the demo](https://www.youtube.com/watch?v=HXBaztZVK-s)**
 
 **Category:** Developer Tooling & Host Tools · **License:** MIT · **Host:** Linux / macOS / Windows, Python 3.10+ · **Target analyzed:** QNX OS 8.0 (QEMU, Raspberry Pi 5, or supported hardware)
 
