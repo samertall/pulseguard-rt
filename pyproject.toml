@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pulseguard-rt"
+version = "0.1.0"
+description = "QNX 8.0 kernel trace latency analyzer and offline real-time diagnostics dashboard"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Samer Tallauze"}]
+keywords = ["QNX", "real-time", "traceprinter", "observability", "embedded"]
+
+[project.scripts]
+pulseguard = "pulseguard.cli:main"
+
+[tool.setuptools.package-data]
+pulseguard = ["assets/*.css", "assets/*.js"]
+
