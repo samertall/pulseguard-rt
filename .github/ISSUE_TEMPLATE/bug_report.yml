@@ -1,0 +1,71 @@
+name: Bug report
+description: Report a reproducible problem in PulseGuard RT without sharing sensitive trace data.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please remove credentials, customer information, proprietary QNX data, and identifying process names from any trace snippets.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Trace parser
+        - Scheduling analysis
+        - CLI or JSON export
+        - Offline HTML dashboard
+        - Installation or documentation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Host environment
+      description: Operating system and Python version
+      placeholder: "Ubuntu 24.04, Python 3.12"
+    validations:
+      required: true
+  - type: dropdown
+    id: trace-source
+    attributes:
+      label: Trace source
+      options:
+        - Bundled synthetic example
+        - Sanitized QNX SDP 8.0 traceprinter text
+        - Other or unknown
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the exact command, input shape, and a minimal sanitized example where possible.
+      placeholder: |
+        1. Run python3 -m pulseguard ...
+        2. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include errors or warnings with sensitive details removed.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched for existing issues.
+          required: true
+        - label: I removed private, proprietary, and identifying data.
+          required: true
